@@ -7,7 +7,7 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#f5f5f5;font-family:"Yu Gothic","Meiryo",sans-serif;position:relative;min-height:2800px;overflow:auto}
-.line{position:absolute;left:330px;top:0;width:10px;height:8250px;background:#ff9900;border-radius:10px}
+.line{position:absolute;left:330px;top:0;width:10px;height:2850px;background:#ff9900;border-radius:10px}
 .station{position:absolute;left:320px;width:30px;height:30px;background:#fff;border:5px solid #ff9900;border-radius:50%;z-index:5}
 .station-name{position:absolute;left:20px;width:270px;font-size:20px;font-weight:bold;line-height:30px}
 .bus{position:absolute;width:155px;min-height:58px;background:#0066cc;color:#fff;border-radius:12px;padding:6px 9px;font-size:15px;font-weight:bold;text-align:center;box-shadow:0 3px 8px rgba(0,0,0,.30);transition:top .8s ease,left .8s ease;z-index:100}
@@ -36,17 +36,17 @@ body{background:#f5f5f5;font-family:"Yu Gothic","Meiryo",sans-serif;position:rel
    画面に表示する共通停留所
 ---------------------------------------- */
 const stationNames=[
-  "横浜駅西口","岡野町","浅間下","北軽井沢",
+  "横浜駅西口①","岡野町","浅間下","北軽井沢",
   "市民病院","三ツ沢総合グラウンド入口","三ツ沢南町","翠嵐高校前",
   "沢渡三ツ沢地域ケアプラザ前","沢渡","泉町",
-  "市民防災センター前","鶴屋町３丁目","横浜駅西口"
+  "市民防災センター前","鶴屋町３丁目","横浜駅西口②"
 ];
 
 const displayTop={
-  "横浜駅西口":100,"岡野町":300,"浅間下":500,"北軽井沢":700,
+  "横浜駅西口①":100,"岡野町":300,"浅間下":500,"北軽井沢":700,
   "市民病院":900,"三ツ沢総合グラウンド入口":1100,"三ツ沢南町":1300,"翠嵐高校前":1500,
   "沢渡三ツ沢地域ケアプラザ前":1700,"沢渡":1900,"泉町":2100,
-  "市民防災センター前":2300,"鶴屋町３丁目":2500,"横浜駅西口":2700,
+  "市民防災センター前":2300,"鶴屋町３丁目":2500,"横浜駅西口②":2700,
 };
 
 for(const name of stationNames){
